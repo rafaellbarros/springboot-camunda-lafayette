@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_0fr9mxs" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.43.1">
-  <bpmn:process id="springboot-camunda-lafayette-process" isExecutable="true" camunda:historyTimeToLive="180">
-    <bpmn:startEvent id="StartEvent_1" name="Lafayette want  to be involed in a Revolution">
+  <bpmn:process id="springboot-camunda-lafayette-process" name="camunda-lafayette" isExecutable="true" camunda:historyTimeToLive="180">
+    <bpmn:startEvent id="StartEvent_1" name="Lafayette want  to be involed in a Revolution">
       <bpmn:outgoing>SequenceFlow_1fp17al</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:sequenceFlow id="SequenceFlow_1fp17al" sourceRef="StartEvent_1" targetRef="say-hello" />
-    <bpmn:userTask id="say-hello" name="Prepare for Departure" camunda:candidateUsers="demo">
+    <bpmn:userTask id="say-hello" name="Prepare for Departure" camunda:formKey="camunda-forms:/forms/prepere_for_departure.form" camunda:candidateUsers="demo">
+      <bpmn:extensionElements />
       <bpmn:incoming>SequenceFlow_1fp17al</bpmn:incoming>
       <bpmn:outgoing>Flow_1284jbf</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:sequenceFlow id="Flow_1284jbf" sourceRef="say-hello" targetRef="Activity_1ff6m1e" />
-    <bpmn:userTask id="Activity_1ff6m1e" name="Get a Taxi">
+    <bpmn:userTask id="Activity_1ff6m1e" name="Get a Taxi" camunda:formKey="camunda-forms:/forms/get_taxi.form">
       <bpmn:incoming>Flow_1284jbf</bpmn:incoming>
       <bpmn:outgoing>Flow_10helgl</bpmn:outgoing>
     </bpmn:userTask>
