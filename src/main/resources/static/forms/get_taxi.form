@@ -12,7 +12,7 @@
       "description": "How much cash do you want to bring?",
       "validate": {
         "required": true,
-        "pattern": ""
+        "pattern": "^[0-9]+(\\.[0-9]{1,2})?$"
       }
     },
     {
@@ -39,14 +39,17 @@
       },
       "id": "Field_1m70298",
       "key": "tax_cost",
-      "description": "for taxi reasons"
+      "description": "for taxi reasons",
+      "validate": {
+        "pattern": "^[0-9]+(\\.[0-9]{1,2})?$"
+      }
     }
   ],
   "type": "default",
   "id": "form_get_taxi",
   "exporter": {
     "name": "Camunda Modeler",
-    "version": "5.43.1"
+    "version": "5.46.1"
   },
   "executionPlatform": "Camunda Platform",
   "executionPlatformVersion": "7.24.0",
