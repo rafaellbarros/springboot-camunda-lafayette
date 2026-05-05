@@ -127,6 +127,13 @@ Ideal para acelerar desenvolvimento local.
 ### Usando Tarefas de Serviço, Classes Java e Gateways.
 ![lafayette_v2](./docs/img/parte_02.png)
 
+## Parte Três: Lafayette Escreve para Casa
+### Usando Temporizadores e Tarefas do Usuário.
+![lafayette_v3](./docs/img/parte_03.png)
+
+## Parte Quatro: Desastre no Mar para Lafayette
+### Usando Java para lançar eventos de erro BPMN.
+![lafayette_v4](./docs/img/parte_04.png)
 
 
 
