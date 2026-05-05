@@ -123,6 +123,11 @@ Ideal para acelerar desenvolvimento local.
 ### Usando tarefas de usuário e formulários do Camunda.
 ![lafayette_v1](./docs/img/parte_01.png)
 
+## Parte Dois: Lafayette Atravessa o Oceano
+### Usando Tarefas de Serviço, Classes Java e Gateways.
+![lafayette_v2](./docs/img/parte_02.png)
+
+
 
 
 
